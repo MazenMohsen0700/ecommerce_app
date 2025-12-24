@@ -86,7 +86,7 @@ class _ItemdetilState extends State<Itemdetil> {
         Container(
           margin: EdgeInsets.only(top: 20),
           child: Text(
-            'type : HP lenovo Dell Asus ',
+            'type :  ${widget.data['type']} ',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 23,

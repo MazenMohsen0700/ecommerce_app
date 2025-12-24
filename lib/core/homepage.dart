@@ -15,12 +15,14 @@ class Homepage extends StatelessWidget {
         'price': '200',
         'subtitle': 'Best Phone in country',
         'image': 'assets/images/phone.png',
+        'type' : 'iPhone samsung oppo'
       },
       {
         'id': 2,
         'name': 'Laptop',
         'price': '200',
         'subtitle': 'Best Laptop with high preformance',
+      'type' : 'hp lenovo dell asus',
         'image': 'assets/images/laptop.png',
       },
       {
@@ -28,6 +30,7 @@ class Homepage extends StatelessWidget {
         'name': 'Headset',
         'price': '200',
         'subtitle': 'Best Headset with high quality',
+      'type' : 'samsung oppo',
         'image': 'assets/images/headset.png',
       },
       {
@@ -35,6 +38,7 @@ class Homepage extends StatelessWidget {
         'name': 'Camera',
         'price': '200',
         'subtitle': 'Best Camera Ever',
+      'type' : 'canon olympus',
         'image': 'assets/images/camera.png',
       },
       {
@@ -42,6 +46,7 @@ class Homepage extends StatelessWidget {
         'name': 'KeyBoread',
         'price': '200',
         'subtitle': 'Best KeyBoread RGB with high quality',
+      'color' : ' black green',
         'image': 'assets/images/key.png',
       },
       {
@@ -49,6 +54,7 @@ class Homepage extends StatelessWidget {
         'name': 'Mouse ',
         'price': '200',
         'subtitle': 'Best Mouse with high quality',
+      'type' : 'razer  techno switch',
         'image': 'assets/images/mouse.png',
       },
     ];
