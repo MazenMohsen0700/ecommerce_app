@@ -46,7 +46,7 @@ class Homepage extends StatelessWidget {
         'name': 'KeyBoread',
         'price': '200',
         'subtitle': 'Best KeyBoread RGB with high quality',
-      'color' : ' black green',
+      'type' : ' razer t-tiger',
         'image': 'assets/images/key.png',
       },
       {
