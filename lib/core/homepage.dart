@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'detils.dart';
+
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -29,19 +31,19 @@ class Homepage extends StatelessWidget {
         'id': 4,
         'name': 'Camera',
         'price': '200',
-        'image': 'assets/images/headset.png',
+        'image': 'assets/images/camera.png',
       },
       {
         'id': 5,
         'name': 'KeyBoread',
         'price': '200',
-        'image': 'assets/images/phone.png',
+        'image': 'assets/images/key.png',
       },
       {
         'id': 6,
-        'name': 'Mouse',
+        'name': 'Mouse ',
         'price': '200',
-        'image': 'assets/images/headset.png',
+        'image': 'assets/images/mouse.png',
       },
     ];
     return Scaffold(
@@ -171,26 +173,31 @@ class Homepage extends StatelessWidget {
               crossAxisCount: 2,crossAxisSpacing: 10,mainAxisSpacing: 10,
                    ),
                      children: products.map((item) {
-                      return Card(
-                        elevation: 6,
-                       child: Column(
-                         crossAxisAlignment: CrossAxisAlignment.center,
-                       children: [
-                        Image.asset(item['image'], height: 140),
-                         Text(item['name'], style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
-                         Container(
-                             width: double.infinity,
-                           child:Column(
-                             crossAxisAlignment: CrossAxisAlignment.start,
-                             children: [
-                               Text('  Price: ${item['price']}',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.orange)),]
-                           )
-                         ),
+                      return InkWell(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Itemdetil(data: item,)));
+                        },
+                        child: Card(
+                          elevation: 6,
+                         child: Column(
+                           crossAxisAlignment: CrossAxisAlignment.center,
+                         children: [
+                          Image.asset(item['image'], height: 140),
+                           Text(item['name'], style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
+                           Container(
+                               width: double.infinity,
+                             child:Column(
+                               crossAxisAlignment: CrossAxisAlignment.start,
+                               children: [
+                                 Text('  Price: ${item['price']}',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.orange)),]
+                             )
+                           ),
 
 
-                   ] ,
-                    ),
-                        );
+                                           ] ,
+                                            ),
+                          ),
+                      );
                       }).toList(),
 
 
