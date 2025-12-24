@@ -13,36 +13,42 @@ class Homepage extends StatelessWidget {
         'id': 1,
         'name': 'Phone',
         'price': '200',
+        'subtitle': 'Best Phone in country',
         'image': 'assets/images/phone.png',
       },
       {
         'id': 2,
         'name': 'Laptop',
         'price': '200',
+        'subtitle': 'Best Laptop with high preformance',
         'image': 'assets/images/laptop.png',
       },
       {
         'id': 3,
         'name': 'Headset',
         'price': '200',
+        'subtitle': 'Best Headset with high quality',
         'image': 'assets/images/headset.png',
       },
       {
         'id': 4,
         'name': 'Camera',
         'price': '200',
+        'subtitle': 'Best Camera Ever',
         'image': 'assets/images/camera.png',
       },
       {
         'id': 5,
         'name': 'KeyBoread',
         'price': '200',
+        'subtitle': 'Best KeyBoread RGB with high quality',
         'image': 'assets/images/key.png',
       },
       {
         'id': 6,
         'name': 'Mouse ',
         'price': '200',
+        'subtitle': 'Best Mouse with high quality',
         'image': 'assets/images/mouse.png',
       },
     ];
@@ -189,6 +195,7 @@ class Homepage extends StatelessWidget {
                              child:Column(
                                crossAxisAlignment: CrossAxisAlignment.start,
                                children: [
+
                                  Text('  Price: ${item['price']}',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.orange)),]
                              )
                            ),
